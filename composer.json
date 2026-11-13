@@ -1,0 +1,36 @@
+{
+	"name": "dowleydeveloped/password-protection",
+	"description": "Create password protected pages.",
+	"type": "craft-plugin",
+	"version": "1.0.0",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Dowley Developed",
+			"homepage": "https://charlottedowley.co.uk"
+		}
+	],
+	"require": {
+		"craftcms/cms": "^5.0.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"dowleydeveloped\\passwordprotection\\": "src/"
+		}
+	},
+	"extra": {
+		"name": "Password Protection",
+		"handle": "passwordprotection",
+		"developer": "Dowley Developed",
+		"developerUrl": "https://charlottedowley.co.uk",
+		"documentationUrl": "https://github.com/dowleydeveloped/password-protection/blob/main/README.md",
+		"changelogUrl": "https://raw.githubusercontent.com/dowleydeveloped/password-protection/main/CHANGELOG.md",
+		"class": "dowleydeveloped\\passwordprotection\\PasswordProtection"
+	},
+	"config": {
+		"allow-plugins": {
+			"yiisoft/yii2-composer": true,
+			"craftcms/plugin-installer": true
+		}
+	}
+}
